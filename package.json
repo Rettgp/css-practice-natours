@@ -1,0 +1,14 @@
+{
+  "name": "css-practice-natours",
+  "version": "1.0.0",
+  "description": "This project is dedicated to following CSS course work and experimentation around advanced CSS practices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rett",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
