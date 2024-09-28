@@ -4,7 +4,7 @@
   "description": "This project is dedicated to following CSS course work and experimentation around advanced CSS practices.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "author": "Rett",
   "license": "ISC",
