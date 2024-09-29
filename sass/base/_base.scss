@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit /* box-sizing is not default inherited */
+}
+
+html {
+    /* 
+        Root font sizes are set in the html selector.
+        For accessibility don't set absolute pixel sizes. It overrides user specified values.
+        User-agent is 16px, but we want 10px so setting a percentage gets that AND preserves user specified values.
+        This defines what 1rem is and is more of a global setting rather than a typography setting.
+    */
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box
+}
