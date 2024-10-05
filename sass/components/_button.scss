@@ -1,5 +1,6 @@
 .btn {
     /*The :link,:visited are pseudo classes specifically for anchor elements*/
+    &,
     &:link,
     &:visited {
         text-transform: uppercase;
@@ -9,7 +10,11 @@
         border-radius: 10rem;
         transition: all .2s; /* Must be on initial state */
         position: relative;
-        font-size: $default-font-size
+        font-size: $default-font-size;
+
+        // Change for the <button> element
+        border: none;
+        cursor: pointer;
     }
     &:hover {
         transform: translateY(-3px);
@@ -19,7 +24,9 @@
             opacity: 0;
         }
     }
-    &:active {
+    &:active,
+    &:focus {
+        outline: none;
         transform: translateY(-1px);
         box-shadow: 0 .5rem 1rem rgba($color-black,0.2);
     }
