@@ -6,7 +6,8 @@
     position: fixed;
     z-index: 1000;
     background-color: rgba($color-black, 0.8);
-    display: none;
+    opacity: 0;
+    visibility: hidden;
 
     &__content {
         @include center-element;
