@@ -5,7 +5,7 @@
     color: $color-grey-97;
 
     @include respond(tab-portrait) {
-       padding: 8rem 0; 
+       padding: 4rem 0; 
     }
 
     &__logo-box {
@@ -13,7 +13,8 @@
         margin-bottom: 8rem;
 
         @include respond(tab-portrait) {
-            padding: 6rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
         }
     }
 
