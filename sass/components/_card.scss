@@ -12,6 +12,7 @@
         height: 52rem; // Absolute position height fix. Specify same height as parent
         width: 100%;
         transition: all .8s ease;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         border-radius: $border-radius;
         overflow: hidden; // round image corners

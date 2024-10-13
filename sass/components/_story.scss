@@ -32,17 +32,23 @@
         width: 15rem;
         height: 15rem;
         float: left;
-        -webit-shape-outside: circle(50% at 50% 50%);
-        shape-outside: circle(50% at 50% 50%);
-        -webkit-clip-path: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%);
         margin-right: 3rem;
         position: relative;
+        overflow: hidden;
+        border-radius: 50%;
         // note: The course used transforms to move the shape to provide margin.
         // This seems like poor design since it then requires the .story class to account
         // for this arbitrary move which means less code maintability. Why was this
         // recommended?
         // transform: translateX(-3rem);
+
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            -webkit-clip-path: circle(50% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+            -webit-shape-outside: circle(50% at 50% 50%);
+            shape-outside: circle(50% at 50% 50%);
+            border-radius: 0;
+        }
     }
 
     &__img {
